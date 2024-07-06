@@ -1,0 +1,84 @@
+
+Задание № 1 - Используя команду cat в терминале операционной системы Linux, 
+создать два файла Домашние животные (заполнив файл собаками, кошками, хомяками)
+ и Вьючные животными (заполнив файл Лошадьми, верблюдами и ослы), 
+а затем объединить их. 
+Просмотреть содержимое созданного файла.
+Переименовать файл, дав ему новое имя (Друзья человека).
+
+Выполнение:
+
+cat > Home_animals
+cat
+dog
+hamster
+Ctrl + D
+
+Screenshot 1
+
+cat > Pack_animals
+horse
+camel
+donkey
+Ctrl + D
+
+Screenshot 2
+
+cat Home_animals Pack_animals > Human_Frends
+
+cat Human_Frends
+
+Screenshot 3
+
+mv Human_Frends Humans_frends
+
+Screenshot 4
+
+Задание № 2 - Создать директорию, переместить файл туда.
+
+Выполнение:
+
+mkdir task2
+
+mv Humans_frends task2/
+
+Screenshot 5
+
+Задание № 3 - Подключить дополнительный репозиторий MySQL. Установить любой пакет
+из этого репозитория.
+
+Выполнение:
+
+sudo wget -c wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+
+sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+sudo apt update
+sudo apt upgrade
+sudo apt install mysql-server
+
+mysql_secure_installation
+
+systemctl status mysql
+
+Screenshot 6
+
+Задание № 4 - Установить и удалить deb-пакет с помощью dpkg.
+
+Выполнение:
+
+wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+
+sudo dpkg -i discord.deb 
+
+sudo dpkg -r discord
+
+Screenshot 7
+
+Задание № 5 - Выложить историю команд в терминале ubuntu.
+
+Выполнение:
+
+history
+
+Screenshot 8
